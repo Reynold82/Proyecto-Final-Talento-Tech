@@ -1,0 +1,292 @@
+{
+    "info": {
+        "_postman_id": "455f5d11-252a-416b-b1fc-7cf4090b893c",
+        "name": "products-api-deployed-version",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://localhost:3000/auth/login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://proyecto-final-talento-tech-one.vercel.app/auth/login",
+                    "path": [
+                        "auth",
+                        "login"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "proyecto-final-talento-tech-one",
+                        "vercel",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\": \"user@login.com.ar\",\n  \"password\": \"userlogin2025\"\n}"
+                }
+            }
+        },
+        {
+            "name": "https://proyecto-final-talento-tech-one.vercel.app/api/products",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://proyecto-final-talento-tech-one.vercel.app/api/products",
+                    "path": [
+                        "api",
+                        "products"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "proyecto-final-talento-tech-one",
+                        "vercel",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwiaWF0IjoxNzUyNTMyNDM5LCJleHAiOjE3NTI1MzYwMzl9.39QaIb9BQPzM5EXlNGHqIq1Xb_gNhD0QDMD3Ul5oLTY"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ]
+            }
+        },
+        {
+            "name": "https://proyecto-final-talento-tech-one.vercel.app/api/products/oIQdK1I1DPyDK3Qu9HfK",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "https://proyecto-final-talento-tech-one.vercel.app/api/products/oIQdK1I1DPyDK3Qu9HfK",
+                    "path": [
+                        "api",
+                        "products",
+                        "oIQdK1I1DPyDK3Qu9HfK"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "proyecto-final-talento-tech-one",
+                        "vercel",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwiaWF0IjoxNzUyNTMyNDM5LCJleHAiOjE3NTI1MzYwMzl9.39QaIb9BQPzM5EXlNGHqIq1Xb_gNhD0QDMD3Ul5oLTY"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "https://proyecto-final-talento-tech-one.vercel.app/api/create/",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://proyecto-final-talento-tech-one.vercel.app/api/products/create",
+                    "path": [
+                        "api",
+                        "products",
+                        "create"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "proyecto-final-talento-tech-one",
+                        "vercel",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwiaWF0IjoxNzUyNTMyNDM5LCJleHAiOjE3NTI1MzYwMzl9.39QaIb9BQPzM5EXlNGHqIq1Xb_gNhD0QDMD3Ul5oLTY"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"name\": \"Camiseta Manu Ginobili 5\",\n    \"in-stock\": true,\n    \"category\": \"Basket\",\n    \"SKU\": \"MG200506\",\n    \"price\": 159.999\n}"
+                }
+            }
+        },
+        {
+            "name": "https://proyecto-final-talento-tech-one.vercel.app/api/products/5g11I8atkDiH5YNu9VsS",
+            "request": {
+                "method": "PATCH",
+                "url": {
+                    "raw": "https://proyecto-final-talento-tech-one.vercel.app/api/products/5g11I8atkDiH5YNu9VsS",
+                    "path": [
+                        "api",
+                        "products",
+                        "5g11I8atkDiH5YNu9VsS"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "proyecto-final-talento-tech-one",
+                        "vercel",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwiaWF0IjoxNzUyNTMyNDM5LCJleHAiOjE3NTI1MzYwMzl9.39QaIb9BQPzM5EXlNGHqIq1Xb_gNhD0QDMD3Ul5oLTY"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"price\": 79.999\n}"
+                }
+            }
+        },
+        {
+            "name": "https://proyecto-final-talento-tech-one.vercel.app/api/products/",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "https://proyecto-final-talento-tech-one.vercel.app/api/products/Ee6PAbhsAlBOHH5DAaM3",
+                    "path": [
+                        "api",
+                        "products",
+                        "Ee6PAbhsAlBOHH5DAaM3"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "proyecto-final-talento-tech-one",
+                        "vercel",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwiaWF0IjoxNzUyNTMyNDM5LCJleHAiOjE3NTI1MzYwMzl9.39QaIb9BQPzM5EXlNGHqIq1Xb_gNhD0QDMD3Ul5oLTY"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"SKU\": \"BJ200001\",\n    \"in-stock\": true,\n    \"name\": \"Camiseta Titular Boca Juniors 2000/01\",\n    \"price\": 159.999,\n    \"category\": \"Fútbol\"\n  }"
+                }
+            }
+        },
+        {
+            "name": "https://proyecto-final-talento-tech-one.vercel.app/api/products/5g11I8atkDiH5YNu9VsS",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "https://proyecto-final-talento-tech-one.vercel.app/api/products/5g11I8atkDiH5YNu9VsS",
+                    "path": [
+                        "api",
+                        "products",
+                        "5g11I8atkDiH5YNu9VsS"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "proyecto-final-talento-tech-one",
+                        "vercel",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwiaWF0IjoxNzUyNTMyNDM5LCJleHAiOjE3NTI1MzYwMzl9.39QaIb9BQPzM5EXlNGHqIq1Xb_gNhD0QDMD3Ul5oLTY"
+                    }
+                ]
+            }
+        }
+    ]
+}

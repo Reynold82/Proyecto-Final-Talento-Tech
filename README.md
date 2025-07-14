@@ -71,9 +71,19 @@ El servidor estará corriendo en http://localhost:3000 (o el puerto que definas 
 
 ---
 
+## API Desplegada
+
+La API también se encuentra desplegada en Vercel y está disponible para ser consumida desde la siguiente URL base:
+
+`https://proyecto-final-talento-tech-one.vercel.app/`
+
+Todos los *endpoints* documentados a continuación funcionan sobre esta URL. Por ejemplo, para obtener todos los productos, la petición sería a `https://proyecto-final-talento-tech-one.vercel.app/api/products`.
+
+---
+
 ## Puntos de Acceso (Endpoints) de la API
 
-## Autenticación
+### Autenticación
 `POST /auth/login`
 Autentica a un usuario y devuelve un token JWT si las credenciales son válidas.
 
@@ -100,7 +110,7 @@ Autentica a un usuario y devuelve un token JWT si las credenciales son válidas.
 
 ---
 
-## Productos
+### Productos
 
 
 _Nota: Todas las rutas de productos requieren autenticación. Debes incluir el token JWT en la cabecera de la petición._
@@ -224,7 +234,7 @@ Elimina un producto del catálogo.
 ---
 
 ## Pruebas de la API
-Para facilitar la prueba y el uso de esta API, se adjunta una colección para un cliente de API (como ThunderClient o Postman). Esta colección contiene todas las peticiones aquí documentadas, pre-configuradas para demostrar el correcto funcionamiento de cada endpoint.
+Para facilitar la prueba y el uso de esta API, se adjunta una colección para un cliente de API (el archivo es "thunder-collection_postman_products-api-deployed-version.json" en la raíz del proyecto). Esta colección contiene todas las peticiones aquí documentadas, pre-configuradas para demostrar el correcto funcionamiento de cada endpoint.
 
 Para usarla:
 
